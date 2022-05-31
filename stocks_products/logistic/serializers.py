@@ -36,7 +36,7 @@ class StockSerializer(serializers.ModelSerializer):
 
         for pos in positions:
             StockProduct.objects.create(stock=stock, product=pos['product'], quantity=pos['quantity'],price=pos['price'])
-            StockProduct.objects.create(stock=stock, **pos)
+            # StockProduct.objects.create(stock=stock, **pos)
 
 
 
